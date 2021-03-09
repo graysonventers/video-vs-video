@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Questrial&display=swap');
 
 * {
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     background-color: #333;
 }
 
@@ -37,7 +37,7 @@ padding: 0;
 .opacityContainer input {
     display: flex;
     align-items: center;
-    width: 60%;
+    max-width: 600px;
     
 }
 
@@ -62,16 +62,18 @@ padding: 0;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 1%;
+    margin: 1%, 5%, 5%, 5%;
     opacity: 50%;
 }
+
 
 .controls {
     display: flex;
     align-items: center;
     color: #a8a5a5; 
-    width: 60%;
     border-radius: 10px;
+    width: 600px;
+    
 }
 
 .controls .btn {
@@ -92,18 +94,6 @@ padding: 0;
     color: #a8a5a5;
 }
 
-.controls .timestamp {
-    color: #a8a5a5;
-    font-weight: bold;
-    margin-left: 10px;
-}
-
 .btn:focus {
     outline: 0;
-}
-
-@media(max-width: 800px) {
-    .screen, .controls {
-        width: 90%;
-    }
 }
