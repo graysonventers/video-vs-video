@@ -62,32 +62,6 @@ function stopVideo() {
     videoTwo.pause();
 }
 
-function setVideoOneAudio() {
-    if (opacityRange.value == 100) {
-        videoOne.volume = 0.0;
-    } else if (opacityRange.value < 100 && opacityRange.value >= 95) {
-        videoOne.volume = 0.1;
-    } else if (opacityRange.value < 95 && opacityRange.value >= 90) {
-        videoOne.volume = 0.2;
-    } else if (opacityRange.value < 90 && opacityRange.value >= 85) {
-        videoOne.volume = 0.3;
-    } else if (opacityRange.value < 85 && opacityRange.value >= 80) {
-        videoOne.volume = 0.4;
-    }else if (opacityRange.value < 80 && opacityRange.value >= 75) {
-        videoOne.volume = 0.5;
-    } else if (opacityRange.value < 75 && opacityRange.value >= 70) {
-        videoOne.volume = 0.6;
-    } else if (opacityRange.value < 70 && opacityRange.value >= 65) {
-        videoOne.volume = 0.7;
-    } else if (opacityRange.value < 65 && opacityRange.value >= 60) {
-        videoOne.volume = 0.8;
-    } else if (opacityRange.value < 60 && opacityRange.value >= 55) {
-        videoOne.volume = 0.9;
-    } else if (opacityRange.value < 55) {
-        videoOne.volume = 1;
-    }
-};
-
 // Set opacity  && volume for videos
 function setOpacity() {
     // If range is set exactly in middle
