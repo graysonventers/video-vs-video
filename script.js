@@ -90,7 +90,7 @@ function setVideoOneAudio() {
 
 // Set opacity  && volume for videos
 function setOpacity() {
-
+    // If range is set exactly in middle
     if (opacityRange.value === 50) {
         videoOne.style.opacity = 50 + "%";
         videoTwo.style.opacity = 50 + "%";
@@ -100,6 +100,7 @@ function setOpacity() {
         videoTwo.volume = 1;
     }
 
+    // If opacity range is beneath 50, videoOne is priority
     if (opacityRange.value < 50) {
         // set opacity for both videos
         videoOne.style.opacity = 100 - opacityRange.value + "%";
@@ -108,7 +109,7 @@ function setOpacity() {
         videoOne.volume = 1;
         videoTwo.volume = opacityRange.value / 50;
         
-
+    // if opacity range is above 50, videoTwo is priority
     } else if (opacityRange.value > 50) {
         // set video two opacity to
         videoTwo.style.opacity = opacityRange.value + "%";
@@ -116,11 +117,9 @@ function setOpacity() {
 
         // set volumes
         videoTwo.volume = 1;
-        console.log(opacityRange.value)
-        setVideoOneAudio();
+        // set videoOne volume to decrease from range 50 to range 100;
+        videoOne.volume = (100 - opacityRange.value) * 0.02;
     }
-    console.log("videoOne:" + videoOne.volume);
-    console.log("videoTwo:" + videoTwo.volume);
 };
 
 // Event listeners
