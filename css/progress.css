@@ -133,12 +133,12 @@ input[type=range]::-webkit-slider-thumb {
 input[class="opacity"]::-webkit-slider-thumb {
 	-webkit-appearance: none;
 	border: 1px solid #000000;
-	height: 36px;
-	width: 36px;
+	height: 30px;
+	width: 12px;
 	border-radius: 50px;
 	background: #a8a5a5;
 	cursor: pointer;
-	margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+	margin-top: -11px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
   }
   
   /* All the same stuff for Firefox */
